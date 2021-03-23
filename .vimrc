@@ -180,10 +180,10 @@ map <C-f> <ESC>@f
 imap <C-f> <ESC>@f
 
 map <C-space> <ESC>v 
-imap <C-space> <ESC>v
+imap <C-space> <ESC>lv
 
-map <NUL> <ESC>v
-imap <NUL> <ESC>v
+nmap <NUL> <ESC>v
+imap <NUL> <ESC>lv
 
 imap <C-_> <ESC>ui
 vmap <C-_> <Esc>ui
