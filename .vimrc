@@ -237,3 +237,5 @@ endif
 set number
 
 let vim_markdown_preview_github=1
+
+set autochdir
