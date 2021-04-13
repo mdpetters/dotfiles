@@ -127,13 +127,13 @@ endif
 set t_Co=256
 set tabstop=4
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab 
-set background=dark
+"set background=dark
 let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
 let g:zenburn_alternate_Visual=1
 set wildmode=longest,list
 highlight Comment cterm=italic
-colorscheme zenburn 
+colorscheme zenburn
 
 function Paste()
    let x=@0
@@ -179,7 +179,7 @@ nmap <C-d> <ESC>0y$@e<ESC>k$a
 map <C-f> <ESC>@f
 imap <C-f> <ESC>@f
 
-map <C-space> <ESC>v 
+map <C-space> <ESC>lv 
 imap <C-space> <ESC>lv
 
 nmap <NUL> <ESC>v
