@@ -157,7 +157,8 @@ let @e = ':w:call VimuxRunCommand(@0)ji'
 let g:default_julia_version = "devel"
 let g:nerdtree_plugin_open_cmd = "xdg-open"
 let g:nerdtree_open_cmd = "xdg-open"
-
+let g:julia_indent_align_brackets = 0
+let g:julia_indent_align_funcargs = 0
 
 " wrapping comments
 map ,> :s/^/# /<CR>
@@ -172,18 +173,18 @@ nnoremap b @b
 map <C-c> <ESC>@d
 imap <C-c> <ESC>@d
 
-vmap <C-d> <C-q>y<ESC>@e
+vmap <C-d> <C-q>y<ESC>@e<ESC>
 imap <C-d> <ESC>0y$@e<ESC>k$a
-nmap <C-d> <ESC>0y$@e<ESC>k$a
+nmap <C-d> <ESC>0y$@e<ESC>k$
 
 map <C-f> <ESC>@f
 imap <C-f> <ESC>@f
 
-map <C-space> <ESC>lv 
-imap <C-space> <ESC>lv
+nmap <NUL> v 
+imap <NUL> <ESC>lv 
 
-nmap <NUL> <ESC>v
-imap <NUL> <ESC>lv
+"nmap <C-space> v 
+"imap <C-space> <ESC>lv
 
 imap <C-_> <ESC>ui
 vmap <C-_> <Esc>ui
@@ -233,9 +234,10 @@ if &term =~ '^screen' && exists('$TMUX')
     execute "set <F12>=\e[24;*~"
 endif
 
-
 set number
 
 let vim_markdown_preview_github=1
+let g:VimuxRunnerIndex=0
+
 
 set autochdir
