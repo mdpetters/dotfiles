@@ -1,0 +1,440 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/petters/
+	..
+1618251628
+'b
+	/home/petters/bin/
+	..
+1618251628
+'h
+	/home/petters/
+	..
+1618251628
+'z
+	/home/petters/.config/vifm
+	..
+1618251628
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v1
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/media/petters/Office Backup/Ice Nucleation
+	NC State CS Raw Data
+6
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
+	Calwater2
+2
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/Calwater2
+	..
+0
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
+	Calwater2
+2
+d/media/petters/Office Backup/Ice Nucleation
+	NC State CS Raw Data
+6
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
+	Calwater2
+2
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/Calwater2
+	..
+0
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
+	FIN02_03
+4
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/FIN02_03
+	..
+0
+d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
+	..
+0
+d/media/petters/Office Backup/Ice Nucleation
+	..
+0
+d/media/petters/Office Backup
+	..
+0
+d/media/petters
+	..
+0
+d/media
+	..
+0
+d/
+	home
+4
+d/home
+	petters
+2
+d/home/petters
+	Music
+7
+d/home/petters/Music
+	Nirvana
+21
+d/home/petters/Music/Nirvana
+	Nirvana
+1
+d/home/petters/Music/Nirvana/Nirvana
+	..
+0
+d/home/petters/Music/Nirvana
+	..
+0
+d/home/petters/Music
+	PJ Harvey
+21
+d/home/petters/Music/PJ Harvey
+	Let England Shake
+1
+d/home/petters/Music/PJ Harvey/Let England Shake
+	..
+0
+d/home/petters/Music/PJ Harvey
+	..
+0
+d/home/petters/Music
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Proposals
+4
+d/home/petters/Documents/Proposals
+	NIEHS-R21-2020
+4
+d/home/petters/Documents/Proposals/NIEHS-R21-2020
+	f02.png
+21
+d/media/petters/Office Backup
+	..
+0
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	DAQ
+1
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	DOE-SC0018265
+2
+d/home/petters/Documents/Research/DOE-SC0018265
+	..
+0
+d/home/petters/Documents/Research
+	DOE-SC0021074
+3
+d/home/petters/Documents/Research/DOE-SC0021074
+	openHardwareDesignPrecipitator2021
+8
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021
+	zapperFOAM
+2
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/zapperFOAM
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021
+	src
+1
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src
+	f08.jl
+9
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020
+	src
+4
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020/src
+	preprocess
+1
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020/src/preprocess
+	preprocess_sgp_functions.jl
+11
+d/home/petters/dotfiles
+	links.sh
+2
+d/home/petters
+	Dropbox
+6
+d/home/petters/Dropbox
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	MATLAB
+2
+d/home/petters/Documents/MATLAB
+	..
+0
+d/home/petters/Documents
+	..
+0
+d/home/petters
+	Downloads
+5
+d/home/petters/Downloads
+	..
+0
+d/home/petters
+	Documents
+4
+d/home
+	..
+0
+d/
+	home
+4
+d/home
+	petters
+2
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	mq1.jpg
+13
+d/home/petters
+	Desktop
+3
+d/home/petters/Desktop
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	fedora
+10
+d/home/petters/Documents/fedora
+	..
+0
+d/home/petters/Documents
+	Proposals
+4
+d/home/petters/Documents/Proposals
+	..
+0
+d/home/petters/Documents
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	DOE-SC0021074
+3
+d/home/petters/Documents/Research/DOE-SC0021074
+	guiTDMA
+7
+d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA
+	src
+1
+d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA/src
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074
+	softwarePackageSimplify2021
+9
+d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021
+	src
+2
+d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021/src
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074
+	..
+0
+d/home/petters/Documents/Research
+	..
+0
+d/home/petters/Documents
+	..
+0
+d/home/petters
+	texmf
+19
+d/home/petters/texmf
+	..
+0
+d/home/petters
+	texmf
+19
+d/home/petters/texmf
+	..
+0
+d/home/petters
+	texmf
+19
+d/home/petters/texmf
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	..
+0
+d/home/petters/Documents
+	Proposals
+4
+d/home/petters/Documents/Proposals
+	DOE-ARM-PS2-2020
+2
+d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020
+	src
+1
+d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020/src
+	..
+0
+d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020
+	..
+0
+d/home/petters/Documents/Proposals
+	NSF-EPCAPE-CHEM-2021
+8
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
+	src
+2
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
+	fig.png
+1
+d
+
+# Right window history (oldest to newest):
+D/home/petters/Documents/Teaching/MEA-412-2021/modules/notebooks
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:filetype
+:filetype svg
+:filetype f03.svg
+:filetype on
+:help filetype
+:help vifm-:fileviewer
+:help fileviewer
+:fileviewer
+:filetype *.pdf evince
+:filetype *.png eog
+:Q
+:q]
+:wq
+:?
+:highlight
+:o evince
+:!evince
+:!evince %c
+:new
+:help
+:!vim
+:!feh
+:!feh --image-bg #1c1c1c" fig.png -Z -. --auto-reload -x
+:!feh --image-bg "#1c1c1c" fig.png -Z -. --auto-reload -x
+:h
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/petters/.local/share/vifm/Trash/000_]
+	/home/petters/Documents/Research/]
+t/home/petters/.local/share/vifm/Trash/000_charges.jl~
+	/home/petters/Documents/Research/charges.jl~
+t/home/petters/.local/share/vifm/Trash/000_Screenshot from 2021-03-10 23-06-42.png
+	/home/petters/Documents/Research/Screenshot from 2021-03-10 23-06-42.png
+t/home/petters/.local/share/vifm/Trash/000_\
+	/home/petters/dotfiles/\
+t/home/petters/.local/share/vifm/Trash/000_IR_20190524.avi
+	/home/petters/IR_20190524.avi
+t/home/petters/.local/share/vifm/Trash/000_IR_20190524.mp4
+	/home/petters/IR_20190524.mp4
+t/home/petters/.local/share/vifm/Trash/000_IR_mov.avi
+	/home/petters/IR_mov.avi
+t/home/petters/.local/share/vifm/Trash/000_IR_movie.avi
+	/home/petters/IR_movie.avi
+t/home/petters/.local/share/vifm/Trash/000_IR_movie.mp4
+	/home/petters/IR_movie.mp4
+t/home/petters/.local/share/vifm/Trash/000_VIS_20190524.avi
+	/home/petters/VIS_20190524.avi
+t/home/petters/.local/share/vifm/Trash/000_VIS_20190524.mp4
+	/home/petters/VIS_20190524.mp4
+t/home/petters/.local/share/vifm/Trash/000_VIS_movie.avi
+	/home/petters/VIS_movie.avi
+t/home/petters/.local/share/vifm/Trash/000_VIS_movie.mp4
+	/home/petters/VIS_movie.mp4
+t/home/petters/.local/share/vifm/Trash/000_ext_image_viewer=false
+	/home/petters/ext_image_viewer=false
+t/home/petters/.local/share/vifm/Trash/000_feh_535333_000001_foo.png
+	/home/petters/feh_535333_000001_foo.png
+t/home/petters/.local/share/vifm/Trash/000_foo.gif
+	/home/petters/foo.gif
+t/home/petters/.local/share/vifm/Trash/000_foo.html
+	/home/petters/foo.html
+t/home/petters/.local/share/vifm/Trash/000_foo.jl
+	/home/petters/foo.jl
+t/home/petters/.local/share/vifm/Trash/000_foo.png
+	/home/petters/foo.png
+t/home/petters/.local/share/vifm/Trash/000_foo1.html
+	/home/petters/foo1.html
+t/home/petters/.local/share/vifm/Trash/000_foo1.jl
+	/home/petters/foo1.jl
+t/home/petters/.local/share/vifm/Trash/000_sizedist.jl
+	/home/petters/sizedist.jl
+t/home/petters/.local/share/vifm/Trash/000_tg
+	/home/petters/tg
+t/home/petters/.local/share/vifm/Trash/000_trigger
+	/home/petters/trigger
+t/home/petters/.local/share/vifm/Trash/000_guiTDMA.tar.xz
+	/home/petters/texmf/guiTDMA.tar.xz
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
