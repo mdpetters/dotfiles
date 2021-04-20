@@ -30,84 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/media/petters/Office Backup/Ice Nucleation
-	NC State CS Raw Data
-6
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
-	Calwater2
-2
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/Calwater2
-	..
-0
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
-	Calwater2
-2
-d/media/petters/Office Backup/Ice Nucleation
-	NC State CS Raw Data
-6
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
-	Calwater2
-2
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/Calwater2
-	..
-0
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
-	FIN02_03
-4
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data/FIN02_03
-	..
-0
-d/media/petters/Office Backup/Ice Nucleation/NC State CS Raw Data
-	..
-0
-d/media/petters/Office Backup/Ice Nucleation
-	..
-0
-d/media/petters/Office Backup
-	..
-0
-d/media/petters
-	..
-0
-d/media
-	..
-0
-d/
-	home
-4
-d/home
-	petters
-2
-d/home/petters
-	Music
-7
-d/home/petters/Music
-	Nirvana
-21
-d/home/petters/Music/Nirvana
-	Nirvana
-1
-d/home/petters/Music/Nirvana/Nirvana
-	..
-0
-d/home/petters/Music/Nirvana
-	..
-0
-d/home/petters/Music
-	PJ Harvey
-21
-d/home/petters/Music/PJ Harvey
-	Let England Shake
-1
-d/home/petters/Music/PJ Harvey/Let England Shake
-	..
-0
-d/home/petters/Music/PJ Harvey
-	..
-0
-d/home/petters/Music
-	..
-0
 d/home/petters
 	Documents
 4
@@ -328,8 +250,86 @@ d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
 	src
 2
 d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
-	fig.png
-1
+	..
+0
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
+	src
+2
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
+	..
+0
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
+	..
+0
+d/home/petters/Documents/Proposals
+	NSF-CAESAR
+6
+d/home/petters/Documents/Proposals/NSF-CAESAR
+	..
+0
+d/home/petters/Documents/Proposals
+	NSF-CIF-2020
+7
+d/home/petters/Documents/Proposals/NSF-CIF-2020
+	..
+0
+d/home/petters/Documents/Proposals
+	NIEHS-R21-2020
+4
+d/home/petters/Documents/Proposals/NIEHS-R21-2020
+	..
+0
+d/home/petters/Documents/Proposals
+	..
+0
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	NSF-AGS-1946340
+8
+d/home/petters/Documents/Research/NSF-AGS-1946340
+	..
+0
+d/home/petters/Documents/Research
+	..
+0
+d/home/petters/Documents
+	Proposals
+4
+d/home/petters/Documents/Proposals
+	NSF-CIF-2020
+7
+d/home/petters/Documents/Proposals/NSF-CIF-2020
+	full
+2
+d/home/petters/Documents/Proposals/NSF-CIF-2020/full
+	..
+0
+d/home/petters/Documents/Proposals/NSF-CIF-2020
+	..
+0
+d/home/petters/Documents/Proposals
+	NSF-EPCAPE-CHEM-2021
+8
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
+	..
+0
+d/home/petters/Documents/Proposals
+	..
+0
+d/home/petters/Documents
+	..
+0
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	amsulf.jl
+21
 d
 
 # Right window history (oldest to newest):
@@ -373,6 +373,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
+""/home/petters/Documents/Proposals/NSF-CIF-2020/full/Library.bib
 
 # Directory stack (oldest to newest):
 
