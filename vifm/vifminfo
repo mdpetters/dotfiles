@@ -30,15 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters
-	Documents
-4
-d/home/petters/Documents
-	Proposals
-4
-d/home/petters/Documents/Proposals
-	NIEHS-R21-2020
-4
 d/home/petters/Documents/Proposals/NIEHS-R21-2020
 	f02.png
 21
@@ -330,6 +321,15 @@ d/home/petters/Documents
 d/home/petters/Documents/Research
 	amsulf.jl
 21
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
+	..
+0
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
+	src
+2
+d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
+	denuder.jl
+1
 d
 
 # Right window history (oldest to newest):

@@ -147,10 +147,6 @@ function Paste2()
 endfunction
 
 set visualbell
-let g:ConqueTerm_ReadUnfocused=1
-let @d = ':w:call VimuxRunCommand(";clear"):call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
-let @e = ':w:call VimuxRunCommand(";clear"):call VimuxRunCommand(@0)ji' 
-
 let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
 let @e = ':w:call VimuxRunCommand(@0)ji' 
 
@@ -170,12 +166,12 @@ nnoremap <F3> @c <CR>
 
 nnoremap b @b 
 
-map <C-c> <ESC>@d
-imap <C-c> <ESC>@d
+map <C-d> <ESC>@d
+imap <C-d> <ESC>@d
 
-vmap <C-d> <C-q>y<ESC>@e<ESC>
-imap <C-d> <ESC>0y$@e<ESC>k$a
-nmap <C-d> <ESC>0y$@e<ESC>k$
+vmap <C-s> <C-q>y<ESC>@e<ESC>
+imap <C-s> <ESC>0y$@e<ESC>k$a
+nmap <C-s> <ESC>0y$@e<ESC>k$
 
 map <C-f> <ESC>@f
 imap <C-f> <ESC>@f
