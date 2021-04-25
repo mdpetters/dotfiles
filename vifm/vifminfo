@@ -30,39 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents/Proposals/NIEHS-R21-2020
-	f02.png
-21
-d/media/petters/Office Backup
-	..
-0
-d/home/petters/Documents
-	Research
-5
-d/home/petters/Documents/Research
-	DAQ
-1
-d/home/petters
-	Documents
-4
-d/home/petters/Documents
-	Research
-5
-d/home/petters/Documents/Research
-	DOE-SC0018265
-2
-d/home/petters/Documents/Research/DOE-SC0018265
-	..
-0
-d/home/petters/Documents/Research
-	DOE-SC0021074
-3
-d/home/petters/Documents/Research/DOE-SC0021074
-	openHardwareDesignPrecipitator2021
-8
-d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021
-	zapperFOAM
-2
 d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/zapperFOAM
 	..
 0
@@ -330,6 +297,39 @@ d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
 d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
 	denuder.jl
 1
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src
+	Figures
+2
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src
+	Figures
+2
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src
+	Scripts
+3
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	foo.png
+25
+d/home/petters
+	Documents
+4
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	foo.png
+25
 d
 
 # Right window history (oldest to newest):
@@ -351,7 +351,6 @@ D
 :filetype *.png eog
 :Q
 :q]
-:wq
 :?
 :highlight
 :o evince
@@ -364,6 +363,7 @@ D
 :!feh --image-bg #1c1c1c" fig.png -Z -. --auto-reload -x
 :!feh --image-bg "#1c1c1c" fig.png -Z -. --auto-reload -x
 :h
+:wq
 :q
 
 # Search history (oldest to newest):
@@ -373,7 +373,11 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/petters/Documents/Proposals/NSF-CIF-2020/full/Library.bib
+""/home/petters/.local/share/vifm/Trash/000_f02.png
+""/home/petters/.local/share/vifm/Trash/000_f03.png
+""/home/petters/.local/share/vifm/Trash/000_f04.png
+""/home/petters/.local/share/vifm/Trash/000_f06.png
+""/home/petters/.local/share/vifm/Trash/000_f09.png
 
 # Directory stack (oldest to newest):
 
@@ -428,6 +432,16 @@ t/home/petters/.local/share/vifm/Trash/000_trigger
 	/home/petters/trigger
 t/home/petters/.local/share/vifm/Trash/000_guiTDMA.tar.xz
 	/home/petters/texmf/guiTDMA.tar.xz
+t/home/petters/.local/share/vifm/Trash/000_f02.png
+	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f02.png
+t/home/petters/.local/share/vifm/Trash/000_f03.png
+	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f03.png
+t/home/petters/.local/share/vifm/Trash/000_f04.png
+	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f04.png
+t/home/petters/.local/share/vifm/Trash/000_f06.png
+	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f06.png
+t/home/petters/.local/share/vifm/Trash/000_f09.png
+	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f09.png
 
 # State:
 f

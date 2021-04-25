@@ -130,7 +130,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 "set background=dark
 let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
-let g:zenburn_alternate_Visual=1
+"let g:zenburn_alternate_Visual=1
 set wildmode=longest,list
 highlight Comment cterm=italic
 colorscheme zenburn
@@ -169,9 +169,16 @@ nnoremap b @b
 map <C-d> <ESC>@d
 imap <C-d> <ESC>@d
 
+map <S-Enter> <ESC>@d
+imap <S-Enter> <ESC>@d
+
 vmap <C-s> <C-q>y<ESC>@e<ESC>
 imap <C-s> <ESC>0y$@e<ESC>k$a
 nmap <C-s> <ESC>0y$@e<ESC>k$
+
+vmap <C-Enter> <C-q>y<ESC>@e<ESC>
+imap <C-Enter> <ESC>0y$@e<ESC>k$a
+nmap <C-Enter> <ESC>0y$@e<ESC>k$
 
 map <C-f> <ESC>@f
 imap <C-f> <ESC>@f
@@ -194,6 +201,19 @@ vmap <M-w> "*y<Esc>i
 
 imap <C-A> <C-O>gg<C-O>gH<C-O>G<Esc>
 vmap <C-A> <Esc>gggH<C-O>G<Esc>i
+
+nmap <S-Up> v<Up>
+nmap <S-Down> v<Down>
+nmap <S-Left> v<Left>
+nmap <S-Right> v<Right>
+vmap <S-Up> <Up>
+vmap <S-Down> <Down>
+vmap <S-Left> <Left>
+vmap <S-Right> <Right>
+imap <S-Up> <Esc>v<Up>
+imap <S-Down> <Esc>v<Down>
+imap <S-Left> <Esc>v<Left>
+imap <S-Right> <Esc>v<Right>
 
 nm \\paste\\ "=@*.'xy'<CR>gPFx"_2x:echo<CR>
 imap <C-y> x<Esc>\\paste\\"_s
