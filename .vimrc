@@ -206,14 +206,26 @@ nmap <S-Up> v<Up>
 nmap <S-Down> v<Down>
 nmap <S-Left> v<Left>
 nmap <S-Right> v<Right>
+nmap <S-Home> v<Home>
+nmap <S-End> v<End>
+nmap <S-PageUp> vgg0
+nmap <S-PageDown> vG$
 vmap <S-Up> <Up>
 vmap <S-Down> <Down>
 vmap <S-Left> <Left>
 vmap <S-Right> <Right>
+vmap <S-Home> <Home>
+vmap <S-End> <End>
+vmap <S-PageUp> gg0
+vmap <S-PageDown> G$
 imap <S-Up> <Esc>v<Up>
 imap <S-Down> <Esc>v<Down>
 imap <S-Left> <Esc>v<Left>
 imap <S-Right> <Esc>v<Right>
+imap <S-Home> <Esc>v<Home>
+imap <S-End> <Esc><End>
+imap <S-PageUp> <ESC>vgg0
+imap <S-PageDown> <ESC>vG$
 
 nm \\paste\\ "=@*.'xy'<CR>gPFx"_2x:echo<CR>
 imap <C-y> x<Esc>\\paste\\"_s
@@ -225,7 +237,7 @@ if &term =~ '^screen' && exists('$TMUX')
     set mouse+=a
     " tmux knows the extended mouse mode
     set ttymouse=xterm2
-    " tmux will send xterm-style keys when xterm-keys is on
+    v" tmux will send xterm-style keys when xterm-keys is on
     execute "set <xUp>=\e[1;*A"
     execute "set <xDown>=\e[1;*B"
     execute "set <xRight>=\e[1;*C"
