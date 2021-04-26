@@ -23,16 +23,13 @@
 # TUI:
 al
 q0
-v1
+v2
 ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/zapperFOAM
-	..
-0
 d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021
 	src
 1
@@ -330,12 +327,33 @@ d/home/petters/Documents
 d/home/petters/Documents/Research
 	foo.png
 25
+d/home/petters
+	Public
+10
 d
 
 # Right window history (oldest to newest):
 D/home/petters/Documents/Teaching/MEA-412-2021/modules/notebooks
 	..
 0
+D/home/petters/Documents/Teaching/MEA-412-2021/modules
+	..
+0
+D/home/petters/Documents/Teaching/MEA-412-2021
+	..
+0
+D/home/petters/Documents/Teaching
+	..
+0
+D/home/petters/Documents
+	Teaching
+7
+D/home/petters
+	Documents
+4
+D/home/petters/Documents
+	Teaching
+7
 D
 
 # Command line history (oldest to newest):
@@ -364,6 +382,7 @@ D
 :!feh --image-bg "#1c1c1c" fig.png -Z -. --auto-reload -x
 :h
 :wq
+:vsplit
 :q
 
 # Search history (oldest to newest):
@@ -373,11 +392,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/petters/.local/share/vifm/Trash/000_f02.png
-""/home/petters/.local/share/vifm/Trash/000_f03.png
-""/home/petters/.local/share/vifm/Trash/000_f04.png
-""/home/petters/.local/share/vifm/Trash/000_f06.png
-""/home/petters/.local/share/vifm/Trash/000_f09.png
+""/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
 
 # Directory stack (oldest to newest):
 
@@ -442,6 +457,12 @@ t/home/petters/.local/share/vifm/Trash/000_f06.png
 	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f06.png
 t/home/petters/.local/share/vifm/Trash/000_f09.png
 	/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src/Figures/f09.png
+t/home/petters/.local/share/vifm/Trash/000_vscjlsymserv-5628ed75-95a6-4b0f-bb5e-f3cfac8d16b3
+	/home/petters/vscjlsymserv-5628ed75-95a6-4b0f-bb5e-f3cfac8d16b3
+t/home/petters/.local/share/vifm/Trash/000_soo.jl
+	/home/petters/soo.jl
+t/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
+	/home/petters/julia-1.6.0-linux-aarch64.tar.gz
 
 # State:
 f
