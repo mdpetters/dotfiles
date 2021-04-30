@@ -239,7 +239,7 @@ filextype *.bmp,*.jpg,*.jpeg,,*.gif,*.xpm
         \ shotwell,
 
 filetype *.png
-		\ feh --image-bg "#1c1c1c" fig.png -Z -. --auto-reload -x %f &
+		\ feh --image-bg "#1c1c1c" -Z -. --auto-reload -x %f &
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
          \ identify %f

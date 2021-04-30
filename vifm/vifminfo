@@ -6,13 +6,13 @@
 	..
 1618251628
 'b
-	/home/petters/bin/
+	/home/mdpetter/bin/
 	..
-1618251628
+1619703925
 'h
-	/home/petters/
+	/home/mdpetter/
 	..
-1618251628
+1619703925
 'z
 	/home/petters/.config/vifm
 	..
@@ -23,37 +23,13 @@
 # TUI:
 al
 q0
-v2
+v1
 ov
 m-1
 l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021
-	src
-1
-d/home/petters/Documents/Research/DOE-SC0021074/openHardwareDesignPrecipitator2021/src
-	f08.jl
-9
-d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020
-	src
-4
-d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020/src
-	preprocess
-1
-d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-SGP-2020/src/preprocess
-	preprocess_sgp_functions.jl
-11
-d/home/petters/dotfiles
-	links.sh
-2
-d/home/petters
-	Dropbox
-6
-d/home/petters/Dropbox
-	..
-0
 d/home/petters
 	Documents
 4
@@ -330,6 +306,30 @@ d/home/petters/Documents/Research
 d/home/petters
 	Public
 10
+d/home
+	mdpetter
+1
+d/home/mdpetter
+	foo
+14
+d/home/mdpetter/foo
+	..
+0
+d/home/mdpetter
+	Documents
+3
+d/home/mdpetter/Documents
+	Manuscripts
+5
+d/home/mdpetter/Documents/Manuscripts
+	100 Years of Progress In Cloud Physics, Aerosols, and Aerosol Chemistry
+1
+d/home/mdpetter/Documents/Manuscripts/100 Years of Progress In Cloud Physics, Aerosols, and Aerosol Chemistry
+	citationdata.csv
+31
+d/home/mdpetter/Documents/Projects/Research
+	foo.png
+8
 d
 
 # Right window history (oldest to newest):
@@ -354,6 +354,9 @@ D/home/petters
 D/home/petters/Documents
 	Teaching
 7
+D/home
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -367,7 +370,6 @@ D
 :fileviewer
 :filetype *.pdf evince
 :filetype *.png eog
-:Q
 :q]
 :?
 :highlight
@@ -383,6 +385,7 @@ D
 :h
 :wq
 :vsplit
+:Q
 :q
 
 # Search history (oldest to newest):
