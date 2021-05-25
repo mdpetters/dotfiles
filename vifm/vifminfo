@@ -6,13 +6,13 @@
 	..
 1618251628
 'b
-	/home/mdpetter/bin/
+	/home/petters/bin/
 	..
-1619703925
+1620083072
 'h
-	/home/mdpetter/
+	/home/petters/
 	..
-1619703925
+1620083072
 'z
 	/home/petters/.config/vifm
 	..
@@ -30,69 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters
-	Documents
-4
-d/home/petters/Documents
-	MATLAB
-2
-d/home/petters/Documents/MATLAB
-	..
-0
-d/home/petters/Documents
-	..
-0
-d/home/petters
-	Downloads
-5
-d/home/petters/Downloads
-	..
-0
-d/home/petters
-	Documents
-4
-d/home
-	..
-0
-d/
-	home
-4
-d/home
-	petters
-2
-d/home/petters
-	Documents
-4
-d/home/petters/Documents
-	mq1.jpg
-13
-d/home/petters
-	Desktop
-3
-d/home/petters/Desktop
-	..
-0
-d/home/petters
-	Documents
-4
-d/home/petters/Documents
-	fedora
-10
-d/home/petters/Documents/fedora
-	..
-0
-d/home/petters/Documents
-	Proposals
-4
-d/home/petters/Documents/Proposals
-	..
-0
-d/home/petters/Documents
-	..
-0
-d/home/petters
-	Documents
-4
 d/home/petters/Documents
 	Research
 5
@@ -330,6 +267,69 @@ d/home/mdpetter/Documents/Manuscripts/100 Years of Progress In Cloud Physics, Ae
 d/home/mdpetter/Documents/Projects/Research
 	foo.png
 8
+d/home/petters/Documents/Research
+	foo.png
+27
+d/home/petters
+	..
+0
+d/home
+	petters
+2
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-UDAC/src
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-UDAC
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-2037704
+	..
+0
+d/home/petters/Documents/Research
+	NSF-AGS-1946340
+4
+d/home/petters/Documents/Research/NSF-AGS-1946340
+	NSF-AGS-1946340-HTDMA-Analysis
+3
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-HTDMA-Analysis
+	src
+2
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-HTDMA-Analysis/src
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-HTDMA-Analysis
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-1946340
+	..
+0
+d/home/petters/Documents/Research
+	DOE-SC0021074
+3
+d/home/petters/Documents/Research/DOE-SC0021074
+	DOE-SC0021074-HTDMA-inversion
+3
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion
+	src
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/src
+	paper
+6
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/src/paper
+	sgpLoaders.jl
+13
+d/home/petters/Documents/Research
+	foo.png
+29
+d/home/petters
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix
+	validate_code.jl
+16
+d/home/petters
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -360,6 +360,10 @@ D/home
 D
 
 # Command line history (oldest to newest):
+:e foo.jl
+:e asd
+:e goo.jl
+:!alacritty
 :filetype
 :filetype svg
 :filetype f03.svg
@@ -387,6 +391,7 @@ D
 :vsplit
 :Q
 :q
+:!alacritty &
 
 # Search history (oldest to newest):
 
@@ -466,6 +471,8 @@ t/home/petters/.local/share/vifm/Trash/000_soo.jl
 	/home/petters/soo.jl
 t/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
 	/home/petters/julia-1.6.0-linux-aarch64.tar.gz
+t/home/petters/.local/share/vifm/Trash/000_foo
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix/foo
 
 # State:
 f
