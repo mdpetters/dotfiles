@@ -30,9 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents
-	Research
-5
 d/home/petters/Documents/Research
 	DOE-SC0021074
 3
@@ -330,6 +327,9 @@ d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/t
 d/home/petters
 	..
 0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix
+	mie_compare.jl
+12
 d
 
 # Right window history (oldest to newest):
@@ -390,8 +390,8 @@ D
 :wq
 :vsplit
 :Q
-:q
 :!alacritty &
+:q
 
 # Search history (oldest to newest):
 
