@@ -30,63 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents/Research
-	DOE-SC0021074
-3
-d/home/petters/Documents/Research/DOE-SC0021074
-	guiTDMA
-7
-d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA
-	src
-1
-d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA/src
-	..
-0
-d/home/petters/Documents/Research/DOE-SC0021074/guiTDMA
-	..
-0
-d/home/petters/Documents/Research/DOE-SC0021074
-	softwarePackageSimplify2021
-9
-d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021
-	src
-2
-d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021/src
-	..
-0
-d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021
-	..
-0
-d/home/petters/Documents/Research/DOE-SC0021074
-	..
-0
-d/home/petters/Documents/Research
-	..
-0
-d/home/petters/Documents
-	..
-0
-d/home/petters
-	texmf
-19
-d/home/petters/texmf
-	..
-0
-d/home/petters
-	texmf
-19
-d/home/petters/texmf
-	..
-0
-d/home/petters
-	texmf
-19
-d/home/petters/texmf
-	..
-0
-d/home/petters
-	Documents
-4
 d/home/petters/Documents
 	Research
 5
@@ -330,6 +273,63 @@ d/home/petters
 d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix
 	mie_compare.jl
 12
+d/home/petters/dotfiles/.vim
+	autoload
+2
+d/home/petters/dotfiles/.vim/autoload
+	conque_term.vim
+6
+d/home/petters/dotfiles/.vim
+	plugin
+12
+d/home/petters/dotfiles/.vim/plugin
+	..
+0
+d/home/petters/dotfiles/.vim
+	doc
+5
+d/home/petters/dotfiles/.vim/doc
+	..
+0
+d/home/petters/dotfiles/.vim
+	autoload
+2
+d/home/petters/dotfiles/.vim/autoload
+	..
+0
+d/home/petters/dotfiles/.vim
+	..
+0
+d/home/petters/dotfiles
+	autoload
+2
+d/home/petters/dotfiles/autoload
+	airline
+1
+d/home/petters/dotfiles/autoload/airline
+	..
+0
+d/home/petters/dotfiles/autoload
+	..
+0
+d/home/petters/dotfiles
+	doc
+2
+d/home/petters/dotfiles/doc
+	..
+0
+d/home/petters/dotfiles
+	plugin
+2
+d/home/petters/dotfiles/plugin
+	..
+0
+d/home/petters/dotfiles
+	plugin
+2
+d/home/petters/dotfiles/plugin
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -400,7 +400,7 @@ D
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
+""/home/petters/.local/share/vifm/Trash/000_doc
 
 # Directory stack (oldest to newest):
 
@@ -473,6 +473,38 @@ t/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
 	/home/petters/julia-1.6.0-linux-aarch64.tar.gz
 t/home/petters/.local/share/vifm/Trash/000_foo
 	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix/foo
+t/home/petters/.local/share/vifm/Trash/000_airline.vim
+	/home/petters/dotfiles/.vim/autoload/airline.vim
+t/home/petters/.local/share/vifm/Trash/000_init.vim
+	/home/petters/dotfiles/.vim/plugin/init.vim
+t/home/petters/.local/share/vifm/Trash/001_airline.vim
+	/home/petters/dotfiles/.vim/plugin/airline.vim
+t/home/petters/.local/share/vifm/Trash/000_builder.vim
+	/home/petters/dotfiles/.vim/plugin/builder.vim
+t/home/petters/.local/share/vifm/Trash/000_extensions_default.vim
+	/home/petters/dotfiles/.vim/plugin/extensions_default.vim
+t/home/petters/.local/share/vifm/Trash/000_extensions_tabline.vim
+	/home/petters/dotfiles/.vim/plugin/extensions_tabline.vim
+t/home/petters/.local/share/vifm/Trash/001_foo1.jl
+	/home/petters/dotfiles/.vim/plugin/foo1.jl
+t/home/petters/.local/share/vifm/Trash/000_highlighter.vim
+	/home/petters/dotfiles/.vim/plugin/highlighter.vim
+t/home/petters/.local/share/vifm/Trash/000_parts.vim
+	/home/petters/dotfiles/.vim/plugin/parts.vim
+t/home/petters/.local/share/vifm/Trash/000_section.vim
+	/home/petters/dotfiles/.vim/plugin/section.vim
+t/home/petters/.local/share/vifm/Trash/000_themes.vim
+	/home/petters/dotfiles/.vim/plugin/themes.vim
+t/home/petters/.local/share/vifm/Trash/000_util.vim
+	/home/petters/dotfiles/.vim/plugin/util.vim
+t/home/petters/.local/share/vifm/Trash/000_commands.vim
+	/home/petters/dotfiles/.vim/plugin/commands.vim
+t/home/petters/.local/share/vifm/Trash/000_airline.txt
+	/home/petters/dotfiles/.vim/doc/airline.txt
+t/home/petters/.local/share/vifm/Trash/000_autoload
+	/home/petters/dotfiles/autoload
+t/home/petters/.local/share/vifm/Trash/000_doc
+	/home/petters/dotfiles/doc
 
 # State:
 f
