@@ -30,18 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents
-	Research
-5
-d/home/petters/Documents/Research
-	..
-0
-d/home/petters/Documents
-	Proposals
-4
-d/home/petters/Documents/Proposals
-	DOE-ARM-PS2-2020
-2
 d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020
 	src
 1
@@ -271,65 +259,77 @@ d/home/petters
 	..
 0
 d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration/tmatrix
-	mie_compare.jl
-12
-d/home/petters/dotfiles/.vim
-	autoload
-2
-d/home/petters/dotfiles/.vim/autoload
-	conque_term.vim
-6
-d/home/petters/dotfiles/.vim
-	plugin
-12
-d/home/petters/dotfiles/.vim/plugin
 	..
 0
-d/home/petters/dotfiles/.vim
-	doc
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-POPS-Calibration
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074
+	..
+0
+d/home/petters/Documents/Research
+	NSF-AGS-1946340
+9
+d/home/petters/Documents/Research/NSF-AGS-1946340
+	NSF-AGS-1946340-Fall-2019
+2
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Fall-2019
+	other
+4
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Fall-2019/other
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Fall-2019
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-1946340
+	NSF-AGS-1946340-Zimmerman-2020
 5
-d/home/petters/dotfiles/.vim/doc
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Zimmerman-2020
+	scripts
+5
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Zimmerman-2020/scripts
 	..
 0
-d/home/petters/dotfiles/.vim
-	autoload
+d/home/petters/Documents/Research/NSF-AGS-1946340/NSF-AGS-1946340-Zimmerman-2020
+	scripts
+5
+d/home/petters
+	tuxbear
+6
+d/home/petters/tuxbear
+	..
+0
+d/home/petters
+	snap
+4
+d/home/petters/snap
+	mutt
 2
-d/home/petters/dotfiles/.vim/autoload
-	..
-0
-d/home/petters/dotfiles/.vim
-	..
-0
-d/home/petters/dotfiles
-	autoload
+d/home/petters/snap/mutt
+	265
 2
-d/home/petters/dotfiles/autoload
-	airline
-1
-d/home/petters/dotfiles/autoload/airline
+d/home/petters/snap/mutt/265
 	..
 0
-d/home/petters/dotfiles/autoload
-	..
-0
-d/home/petters/dotfiles
-	doc
+d/home/petters/snap/mutt
+	265
 2
-d/home/petters/dotfiles/doc
+d/home/petters/snap/mutt/265
 	..
 0
-d/home/petters/dotfiles
-	plugin
-2
-d/home/petters/dotfiles/plugin
+d/home/petters/snap/mutt
 	..
 0
-d/home/petters/dotfiles
-	plugin
-2
-d/home/petters/dotfiles/plugin
+d/home/petters/snap
 	..
 0
+d/home/petters
+	Downloads
+4
+d/home/petters/Downloads
+	f05 (1).jl
+9
 d
 
 # Right window history (oldest to newest):
@@ -394,13 +394,14 @@ D
 :q
 
 # Search history (oldest to newest):
+/.jl
 
 # Prompt history (oldest to newest):
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/petters/.local/share/vifm/Trash/000_doc
+""/home/petters/.local/share/vifm/Trash/000_julia-1.6.0-linux-aarch64.tar.gz
 
 # Directory stack (oldest to newest):
 
@@ -505,6 +506,56 @@ t/home/petters/.local/share/vifm/Trash/000_autoload
 	/home/petters/dotfiles/autoload
 t/home/petters/.local/share/vifm/Trash/000_doc
 	/home/petters/dotfiles/doc
+t/home/petters/.local/share/vifm/Trash/000_plugin
+	/home/petters/dotfiles/plugin
+t/home/petters/.local/share/vifm/Trash/002_airline.vim
+	/home/petters/dotfiles/.vim/airline.vim
+t/home/petters/.local/share/vifm/Trash/001_t
+	/home/petters/dotfiles/.vim/t
+t/home/petters/.local/share/vifm/Trash/000_magit
+	/home/petters/dotfiles/.vim/magit
+t/home/petters/.local/share/vifm/Trash/000_airline
+	/home/petters/dotfiles/.vim/airline
+t/home/petters/.local/share/vifm/Trash/000_mmtemplates
+	/home/petters/dotfiles/.vim/autoload/mmtemplates
+t/home/petters/.local/share/vifm/Trash/000_airline-themes.vim
+	/home/petters/dotfiles/.vim/plugin/airline-themes.vim
+t/home/petters/.local/share/vifm/Trash/000_magit.vim
+	/home/petters/dotfiles/.vim/plugin/magit.vim
+t/home/petters/.local/share/vifm/Trash/000_matlab-support
+	/home/petters/dotfiles/.vim/matlab-support
+t/home/petters/.local/share/vifm/Trash/001_magit.vim
+	/home/petters/dotfiles/.vim/syntax/magit.vim
+t/home/petters/.local/share/vifm/Trash/000_test
+	/home/petters/dotfiles/.vim/test
+t/home/petters/.local/share/vifm/Trash/000_.netrwhist
+	/home/petters/dotfiles/.vim/.netrwhist
+t/home/petters/.local/share/vifm/Trash/000_after
+	/home/petters/dotfiles/.vim/after
+t/home/petters/.local/share/vifm/Trash/000_bundle
+	/home/petters/dotfiles/.vim/bundle
+t/home/petters/.local/share/vifm/Trash/000_common
+	/home/petters/dotfiles/.vim/common
+t/home/petters/.local/share/vifm/Trash/000_CSApprox.vim
+	/home/petters/dotfiles/.vim/CSApprox.vim
+t/home/petters/.local/share/vifm/Trash/000_INSTALL.md
+	/home/petters/dotfiles/.vim/INSTALL.md
+t/home/petters/.local/share/vifm/Trash/000_LICENSE.md
+	/home/petters/dotfiles/.vim/LICENSE.md
+t/home/petters/.local/share/vifm/Trash/000_README.md
+	/home/petters/dotfiles/.vim/README.md
+t/home/petters/.local/share/vifm/Trash/000_asyncrun.vim
+	/home/petters/dotfiles/.vim/asyncrun.vim
+t/home/petters/.local/share/vifm/Trash/000_conque_term.vim
+	/home/petters/dotfiles/.vim/conque_term.vim
+t/home/petters/.local/share/vifm/Trash/000_logo.png
+	/home/petters/dotfiles/.vim/logo.png
+t/home/petters/.local/share/vifm/Trash/000_matlab-support.vim
+	/home/petters/dotfiles/.vim/matlab-support.vim
+t/home/petters/.local/share/vifm/Trash/000_octave-workspace
+	/home/petters/dotfiles/.vim/octave-workspace
+t/home/petters/.local/share/vifm/Trash/000_vim-markdown-preview.vim
+	/home/petters/dotfiles/.vim/vim-markdown-preview.vim
 
 # State:
 f
