@@ -334,6 +334,8 @@ filextype *.odt,*.doc,*.docx,*.xls,*.xlsx,*.odp,*.pptx libreoffice %f &
 fileviewer *.doc catdoc %c
 fileviewer *.docx docx2txt.pl %f -
 
+filextype *.lyx mylyx %c &
+
 " TuDu files
 filetype *.tudu tudu -f %c
 

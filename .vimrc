@@ -273,7 +273,7 @@ let &t_EI = "\e[1 q"
 set autochdir
 set clipboard=unnamedplus
 let g:airline_powerline_fonts = 1
-set laststatus=2
+set laststatus=1
 let g:lightline = {
       \ 'colorscheme': 'apprentice',
       \ }

@@ -30,90 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020
-	src
-1
-d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020/src
-	..
-0
-d/home/petters/Documents/Proposals/DOE-ARM-PS2-2020
-	..
-0
-d/home/petters/Documents/Proposals
-	NSF-EPCAPE-CHEM-2021
-8
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
-	src
-2
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
-	..
-0
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
-	src
-2
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021/src
-	..
-0
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
-	..
-0
-d/home/petters/Documents/Proposals
-	NSF-CAESAR
-6
-d/home/petters/Documents/Proposals/NSF-CAESAR
-	..
-0
-d/home/petters/Documents/Proposals
-	NSF-CIF-2020
-7
-d/home/petters/Documents/Proposals/NSF-CIF-2020
-	..
-0
-d/home/petters/Documents/Proposals
-	NIEHS-R21-2020
-4
-d/home/petters/Documents/Proposals/NIEHS-R21-2020
-	..
-0
-d/home/petters/Documents/Proposals
-	..
-0
-d/home/petters/Documents
-	Research
-5
-d/home/petters/Documents/Research
-	NSF-AGS-1946340
-8
-d/home/petters/Documents/Research/NSF-AGS-1946340
-	..
-0
-d/home/petters/Documents/Research
-	..
-0
-d/home/petters/Documents
-	Proposals
-4
-d/home/petters/Documents/Proposals
-	NSF-CIF-2020
-7
-d/home/petters/Documents/Proposals/NSF-CIF-2020
-	full
-2
-d/home/petters/Documents/Proposals/NSF-CIF-2020/full
-	..
-0
-d/home/petters/Documents/Proposals/NSF-CIF-2020
-	..
-0
-d/home/petters/Documents/Proposals
-	NSF-EPCAPE-CHEM-2021
-8
-d/home/petters/Documents/Proposals/NSF-EPCAPE-CHEM-2021
-	..
-0
-d/home/petters/Documents/Proposals
-	..
-0
 d/home/petters/Documents
 	..
 0
@@ -330,6 +246,90 @@ d/home/petters
 d/home/petters/Downloads
 	f05 (1).jl
 9
+d/home/petters/Documents/Research/DOE-SC0018265/DOE-SC0018265-Ice-Paper/src
+	chamber.jl
+5
+d/home/petters/Documents
+	Research
+5
+d/home/petters/Documents/Research
+	Gtk.jl
+5
+d/home/petters/Documents/Research/Gtk.jl
+	gen
+3
+d/home/petters/Documents/Research/DOE-SC0021074/softwarePackageSimplify2021/src/figures
+	
+0
+d/home/petters/Documents/Research/DOE-SC0021074
+	DOE-SC0021074-HTDMA-inversion
+3
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion
+	softwarePackageSimplify2021
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021
+	src
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src
+	figures
+1
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures
+	f01_revised.jl
+5
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/src
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion
+	softwarePackageSimplify2021
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021
+	src
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src
+	figures
+1
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures
+	f01.jl
+4
+d/home/petters
+	foo.txt
+20
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures
+	figures
+1
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures/figures
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures
+	figures
+1
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures/figures
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/figures
+	..
+0
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src
+	processing
+2
+d/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/softwarePackageSimplify2021/src/processing
+	Project.toml
+2
+d/home/petters/Documents/Research/NSF-AGS-2037704
+	NSF-AGS-2037704-Fit
+1
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-Fit/src/sample
+	..
+0
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-Fit/src
+	Project.toml
+3
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-Fit
+	src
+1
+d/home/petters/Documents/Research/NSF-AGS-2037704/NSF-AGS-2037704-Fit/src
+	process.jl
+4
 d
 
 # Right window history (oldest to newest):
@@ -360,6 +360,8 @@ D/home
 D
 
 # Command line history (oldest to newest):
+:e example.jl
+:!evince Respone\ to\ referees.pdf
 :e foo.jl
 :e asd
 :e goo.jl
@@ -389,14 +391,19 @@ D
 :h
 :wq
 :vsplit
-:Q
 :!alacritty &
+:!cp ~/Downloads/f01_revised.jl .
+:e testA.jl
+:Q
 :q
 
 # Search history (oldest to newest):
 /.jl
 
 # Prompt history (oldest to newest):
+pNSF-AFS-2037704-Fit
+pNSF-AGS-2037704-Fite
+pNSF-AGS-2037704-Fit
 
 # Local filter history (oldest to newest):
 
@@ -556,6 +563,48 @@ t/home/petters/.local/share/vifm/Trash/000_octave-workspace
 	/home/petters/dotfiles/.vim/octave-workspace
 t/home/petters/.local/share/vifm/Trash/000_vim-markdown-preview.vim
 	/home/petters/dotfiles/.vim/vim-markdown-preview.vim
+t/home/petters/.local/share/vifm/Trash/000_manuscript.lyx~ (1)
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript.lyx~ (1)
+t/home/petters/.local/share/vifm/Trash/000_manuscript.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript.lyx~
+t/home/petters/.local/share/vifm/Trash/000_manuscript1.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript1.lyx~
+t/home/petters/.local/share/vifm/Trash/000_manuscript1.lyx~ (1)
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript1.lyx~ (1)
+t/home/petters/.local/share/vifm/Trash/000_manuscript2.aux
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript2.aux
+t/home/petters/.local/share/vifm/Trash/000_manuscript2.log
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript2.log
+t/home/petters/.local/share/vifm/Trash/000_manuscript2.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript2.lyx~
+t/home/petters/.local/share/vifm/Trash/000_manuscript2.lyx~ (1)
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript2.lyx~ (1)
+t/home/petters/.local/share/vifm/Trash/000_manuscript2.tex
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript2.tex
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.aux
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.aux
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.bbl
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.bbl
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.blg
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.blg
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.log
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.log
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.pdf
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.pdf
+t/home/petters/.local/share/vifm/Trash/000_manuscript3.tex
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript3.tex
+t/home/petters/.local/share/vifm/Trash/000_manuscript_revised.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/manuscript_revised.lyx~
+t/home/petters/.local/share/vifm/Trash/000_missfont.log
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/missfont.log
+t/home/petters/.local/share/vifm/Trash/000_overvflow.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/overvflow.lyx~
+t/home/petters/.local/share/vifm/Trash/000_overvflow.lyx~ (1)
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/overvflow.lyx~ (1)
+t/home/petters/.local/share/vifm/Trash/000_supporting(1).lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/supporting(1).lyx~
+t/home/petters/.local/share/vifm/Trash/000_supporting.lyx~
+	/home/petters/Documents/Research/DOE-SC0021074/DOE-SC0021074-HTDMA-inversion/doc/supporting.lyx~
 
 # State:
 f
