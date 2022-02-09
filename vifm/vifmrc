@@ -173,6 +173,9 @@ command! reload :write | restart
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
+command evince evince *.{pdf} &
+filetype *.pdf evince
+
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
@@ -190,8 +193,8 @@ filextype *.djvu
 
 " Audio
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
-       \ {Play using ffplay}
-       \ ffplay -nodisp -autoexit %c,
+       "\ {Play using ffplay}
+       "\ ffplay -nodisp -autoexit %c,
        \ {Play using MPlayer}
        \ mplayer %f,
 fileviewer *.mp3 mp3info
@@ -239,7 +242,8 @@ filextype *.bmp,*.jpg,*.jpeg,,*.gif,*.xpm
         \ shotwell,
 
 filetype *.png
-		\ feh --image-bg "#1c1c1c" -Z -. --auto-reload -x %f &
+		"\ feh --image-bg "#1c1c1c" -Z -. --auto-reload -x %f &
+		\ feh --image-bg "#fdf6e3" -Z -. --auto-reload -x %f &
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
          \ identify %f
@@ -391,7 +395,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" set viewcolumns=-{name}..,6{}.
+set viewcolumns=-{name},{size},{mtime}.
 
 " Filter-out build and temporary files
 "

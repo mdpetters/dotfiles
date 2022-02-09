@@ -1,3 +1,4 @@
+
 " The default vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -124,27 +125,23 @@ if has('langmap') && exists('+langremap')
   set nolangremap
 endif
 
+call plug#begin()
+	Plug 'JuliaEditorSupport/julia-vim'
+	Plug 'itchyny/lightline.vim'
+	Plug 'preservim/vimux'
+	Plug 'preservim/nerdtree'
+call plug#end()
+
 set t_Co=256
 set tabstop=4
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab 
 "set background=dark
-let g:zenburn_high_Contrast=1
+"let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
 "let g:zenburn_alternate_Visual=1
 set wildmode=longest,list
 highlight Comment cterm=italic
 colorscheme zenburn
-
-function Paste()
-   let x=@0
-   return x
-endfunction
-
-
-function Paste2()
-   let x=@"
-   return x
-endfunction
 
 set visualbell
 let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
@@ -160,47 +157,39 @@ let g:julia_indent_align_funcargs = 0
 map ,> :s/^/# /<CR>
 map ,< :s/^# /<CR>
 
-map cp :let @" = expand("%:r")
-nnoremap <F2> @d <CR>
-nnoremap <F3> @c <CR>
+let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
+let @e = ':w:call VimuxRunCommand(@0)ji' 
+let @f = ':VimuxRunCommand("?".@0)'
+let @g = ':w:call VimuxRunCommand("format(\"" . bufname("%") . "\")"):ei' 
 
-nnoremap b @b 
+execute "set <A-s>=\es"
+execute "set <A-d>=\ed"
+execute "set <A-a>=\ea"
+execute "set <A-f>=\ef"
+execute "set <A-cr>=\e\<cr>"
 
-map <C-d> <ESC>@d
-imap <C-d> <ESC>@d
+noremap <A-d> <ESC>ml0yaw@f<ESC>`l
+inoremap <A-d> <ESC>ml0yaw@f<ESC>`l
 
 map <S-Enter> <ESC>@d
 imap <S-Enter> <ESC>@d
-
-vmap <C-s> <C-q>y<ESC>@e<ESC>
-imap <C-s> <ESC>0y$@e<ESC>k$a
-nmap <C-s> <ESC>0y$@e<ESC>k$
+map <A-a> <ESC>@d
+imap <A-a> <ESC>@d
+map <A-f> <ESC>@g
+imap <A-f> <ESC>@g
 
 vmap <C-Enter> <C-q>y<ESC>@e<ESC>
-imap <C-Enter> <ESC>0y$@e<ESC>k$a
-nmap <C-Enter> <ESC>0y$@e<ESC>k$
+imap <C-Enter> <ESC>ml0y$@e<ESC>`lli
+nmap <C-Enter> <ESC>ml0y$@e<ESC>`l
 
-map <C-f> <ESC>@f
-imap <C-f> <ESC>@f
 
-nmap <NUL> v 
-imap <NUL> <ESC>lv 
+vmap <A-s> <C-q>y<ESC>@e<ESC>
+imap <A-s> <ESC>ml0y$@e<ESC>`lli
+nmap <A-s> <ESC>ml0y$@e<ESC>`l
 
-"nmap <C-space> v 
-"imap <C-space> <ESC>lv
-
-imap <C-_> <ESC>ui
-vmap <C-_> <Esc>ui
-
-imap <C-w> <C-O>vgG
-vmap <C-w> "*x<Esc>i
-
-execute "set <M-w>=\ew"
-imap <M-w> <C-O>vgG
-vmap <M-w> "*y<Esc>i
-
-imap <C-A> <C-O>gg<C-O>gH<C-O>G<Esc>
-vmap <C-A> <Esc>gggH<C-O>G<Esc>i
+vmap <A-cr> <C-q>y<ESC>@e<ESC>
+imap <A-cr> <ESC>ml[[v][$y$@e<ESC>`lli
+nmap <A-cr> <ESC>ml[[v][$y$@e<ESC>`l
 
 nmap <S-Up> v<Up>
 nmap <S-Down> v<Down>
@@ -227,54 +216,51 @@ imap <S-End> <Esc><End>
 imap <S-PageUp> <ESC>vgg0
 imap <S-PageDown> <ESC>vG$
 
-nm \\paste\\ "=@*.'xy'<CR>gPFx"_2x:echo<CR>
-imap <C-y> x<Esc>\\paste\\"_s
-vmap <C-y> "-cx<Esc>\\paste\\"_x
-"autocmd VimEnter * NERDTree
-"
 " Workaround for TMUX
 if &term =~ '^screen' && exists('$TMUX')
-    set mouse+=a
-    " tmux knows the extended mouse mode
-    set ttymouse=xterm2
-    v" tmux will send xterm-style keys when xterm-keys is on
-    execute "set <xUp>=\e[1;*A"
-    execute "set <xDown>=\e[1;*B"
-    execute "set <xRight>=\e[1;*C"
-    execute "set <xLeft>=\e[1;*D"
-    execute "set <xHome>=\e[1;*H"
-    execute "set <xEnd>=\e[1;*F"
-    execute "set <Insert>=\e[2;*~"
-    execute "set <Delete>=\e[3;*~"
-    execute "set <PageUp>=\e[5;*~"
-    execute "set <PageDown>=\e[6;*~"
-    execute "set <xF1>=\e[1;*P"
-    execute "set <xF2>=\e[1;*Q"
-    execute "set <xF3>=\e[1;*R"
-    execute "set <xF4>=\e[1;*S"
-    execute "set <F5>=\e[15;*~"
-    execute "set <F6>=\e[17;*~"
-    execute "set <F7>=\e[18;*~"
-    execute "set <F8>=\e[19;*~"
-    execute "set <F9>=\e[20;*~"
-    execute "set <F10>=\e[21;*~"
-    execute "set <F11>=\e[23;*~"
-    execute "set <F12>=\e[24;*~"
+	set mouse+=a
+	" tmux knows the extended mouse mode
+	set ttymouse=xterm2
+	v" tmux will send xterm-style keys when xterm-keys is on
+	execute "set <xUp>=\e[1;*A"
+	execute "set <xDown>=\e[1;*B"
+	execute "set <xRight>=\e[1;*C"
+	execute "set <xLeft>=\e[1;*D"
+	execute "set <xHome>=\e[1;*H"
+	execute "set <xEnd>=\e[1;*F"
+	execute "set <Insert>=\e[2;*~"
+	execute "set <Delete>=\e[3;*~"
+	execute "set <PageUp>=\e[5;*~"
+	execute "set <PageDown>=\e[6;*~"
+	execute "set <xF1>=\e[1;*P"
+	execute "set <xF2>=\e[1;*Q"
+	execute "set <xF3>=\e[1;*R"
+	execute "set <xF4>=\e[1;*S"
+	execute "set <F5>=\e[15;*~"
+	execute "set <F6>=\e[17;*~"
+	execute "set <F7>=\e[18;*~"
+	execute "set <F8>=\e[19;*~"
+	execute "set <F9>=\e[20;*~"
+	execute "set <F10>=\e[21;*~"
+	execute "set <F11>=\e[23;*~"
+	execute "set <F12>=\e[24;*~"
 endif
 
 set number
+set clipboard=unnamedplus
 
-let vim_markdown_preview_github=1
+let g:lightline = {
+			\ 'colorscheme': 'apprentice',
+			\ }
+
 let g:VimuxRunnerIndex=0
 
-let &t_SI = "\e[5 q"
+let &t_SI = "\e[5 q"  " Cursor config
 let &t_EI = "\e[1 q"
 
-set autochdir
-set clipboard=unnamedplus
-let g:airline_powerline_fonts = 1
-set laststatus=1
-let g:lightline = {
-      \ 'colorscheme': 'apprentice',
-      \ }
+runtime macros/matchit.vim
 
+" julia
+let g:default_julia_version = '1.0'
+
+set foldmethod=syntax
