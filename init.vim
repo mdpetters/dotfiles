@@ -12,6 +12,7 @@ endif
 set t_Co=256
 set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab 
 set autochdir
+set autoread
 set clipboard=unnamedplus
 set laststatus=1
 set wildmode=longest,list
@@ -20,7 +21,7 @@ set number
 
 set visualbell
 
-let g:zenburn_high_Contrast=1
+"let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
 highlight Comment cterm=italic
 colorscheme zenburn
@@ -32,13 +33,19 @@ map ,< :s/^# /<CR>
 let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
 let @e = ':w:call VimuxRunCommand(@0)ji' 
 let @f = ':VimuxRunCommand("?".@0)'
-
-noremap <a-d> <ESC>ml0yaw@f<ESC>`l
-
+let @g = ':w:call VimuxRunCommand("format(\"" . bufname("%") . "\")"):e!' 
+let @p = ':e!'
 map <S-Enter> <ESC>@d
 imap <S-Enter> <ESC>@d
-map <a-a> <ESC>@d
-imap <a-a> <ESC>@d
+
+map <A-a> <ESC>@d
+imap <A-a> <ESC>@d
+
+noremap <A-d> <ESC>mlyaw@f<ESC>`l
+inoremap <A-d> <ESC>mlyaw@f<ESC>`l
+
+map <A-f> <ESC>ml@g@p<ESC>`l
+imap <A-f> <ESC>ml@g@p<ESC>`lli
 
 vmap <C-Enter> <C-q>y<ESC>@e<ESC>
 imap <C-Enter> <ESC>ml0y$@e<ESC>`lli
@@ -119,3 +126,5 @@ let g:lightline = {
 let g:VimuxRunnerIndex=0
 
 runtime macros/matchit.vim
+
+set foldmethod=syntax
