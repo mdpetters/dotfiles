@@ -87,7 +87,7 @@ endfunction
 
 function! VimuxSendKeys(keys)
   if exists('g:VimuxRunnerIndex')
-    call VimuxTmux('send-keys -t '.g:VimuxRunnerIndex.' '.a:keys)
+    call VimuxTmux('send-keys -t top-right '.a:keys)
   else
     echo 'No vimux runner pane/window. Create one with VimuxOpenRunner'
   endif

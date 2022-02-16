@@ -21,7 +21,7 @@ set number
 
 set visualbell
 
-"let g:zenburn_high_Contrast=1
+let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
 highlight Comment cterm=italic
 colorscheme zenburn
@@ -123,7 +123,7 @@ let g:lightline = {
 			\ 'colorscheme': 'apprentice',
 			\ }
 
-let g:VimuxRunnerIndex=0
+"let g:VimuxRunnerIndex=0
 
 runtime macros/matchit.vim
 
