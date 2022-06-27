@@ -7,6 +7,8 @@ else
 		Plug 'preservim/nerdtree'
 		Plug 'tpope/vim-commentary'
 		Plug 'chrisbra/csv.vim'
+		Plug 'jghauser/kitty-runner.nvim'
+		Plug 'tpope/vim-fugitive'
 	call plug#end()
 endif
 
@@ -41,19 +43,20 @@ let @w = '0'
 function SendKittyCommand(command)
   let s:sendcommand = join([shellescape(a:command, 1), shellescape('\n')])
 
-  let prefixed_command = "!kitty @ send-text --match cmdline:julia " . s:sendcommand
+  let prefixed_command = "!kitty @ send-text --match num:1 " . s:sendcommand
   silent exec prefixed_command
 endfunction
 
 
 " Kitty Bindings
-let @d = ':w:silent !kitty @ send-text --match cmdline:julia "@time include(\"%\")\n" '
-call setreg('e', ":w:call SendKittyCommand('0')")
-let @f = ':silent !kitty @ send-text --match cmdline:julia "? 0"\n'
-let @g = ':w:silent !kitty @ send-text --match cmdline:julia "format(\"%\")\n":e!'
+let @d = ':w:silent !kitty @ send-text --match num:1 "@time include(\"%\")\n" '
+call setreg('e', ":call SendKittyCommand('0')")
+let @f = ':silent !kitty @ send-text --match num:1 "? 0"\n'
+let @g = ':w:silent !kitty @ send-text --match num:1 "format(\"%\")\n":e!'
 let @h = ':silent !kitty @ launch --keep-focus julia'
-let @q = ':silent !kitty @ send-text --match cmdline:julia "\0"\n'
+let @q = ':silent !kitty @ send-text --match num:1 "\0"\n'
 
+call setreg('k', ":call SendKittyCommand('echo \"0\" >> goo.jl')")
 
 map <a-r> <ESC>@h  
 imap <a-r> <ESC>@hi  
@@ -141,15 +144,43 @@ let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
 
 let g:lightline = {
-			\ 'colorscheme': 'apprentice',
+			\ 'colorscheme': 'seoul256',
 			\ }
 
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
+
+set noshowmode
+set laststatus=2
 runtime macros/matchit.vim
 
-set foldmethod=syntax
+"set foldmethod=syntax
 
 let g:NERDTreeQuitOnOpen = 1
 :nnoremap <C-b> :NERDTreeToggle<CR>
 set mouse=a
-
 filetype plugin on
+
+:lua require('kitty-runner')
+
+
+" julia
+let g:default_julia_version = '1.0'
+let g:julia_indent_align_brackets = 0
+let g:julia_indent_align_funcargs = 0
+let g:julia_indent_align_import = 0
+let g:julia_spellcheck_comments = 1
+let g:julia_spellcheck_docstrings = 1
+
+set spell
+
+
