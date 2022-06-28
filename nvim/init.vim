@@ -43,7 +43,7 @@ endif
 
 if &filetype == 'matlab'
 	let @d = ':w:silent !kitty @ send-text --match num:1 "run(\"%\")\n" '
-	let @f = ':silent !kitty @ send-text --match num:1 "doc 0"\n'
+	let @f = ':silent !kitty @ send-text --match num:1 "help 0"\n'
 	let @g = ':w:silent !kitty @ send-text --match num:1 "format(\"%\")\n":e!'
 	let @q = ':silent !kitty @ send-text --match num:1 "\0"\n'
 endif
@@ -68,8 +68,8 @@ map <A-f> <ESC>ml@g@p<ESC>`l
 imap <A-f> <ESC>ml@g@p<ESC>`lli
 
 vmap <a-s> <C-q>y<ESC>@e<ESC>
-imap <a-s> <ESC>o<ESC>kml0y$@e<ESC>`lloi
-nmap <a-s> <ESC>o<ESC>kml0y$@e<ESC>`lu
+imap <a-s> <ESC>ml0y$@e<ESC>`lli
+nmap <a-s> <ESC>ml0y$@e<ESC>`l
 
 vmap <a-cr> <C-q>y<ESC>@e<ESC>
 imap <a-cr> <ESC>ml[[v][$y$@e<ESC>`lli
