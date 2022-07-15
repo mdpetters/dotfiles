@@ -1,0 +1,27 @@
+
+nvim
+Install Plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+Run
+:PlugInstall
+
+Check
+:echo('hasclipboard') -> 0
+install xclip (not automatically installed on all distros)
+source ~/.config/nvim/nvim.init with a Julia file open to trigger setting of macros
+
+
+Patch kitty.desktop
+Exec=env KITTY_DISABLE_WAYLAND=1 /home/petters/.local/kitty.app/bin/kitty -o allow_remote_control=yes --listen-on unix:/tmp/mykitty
+
+FISH
+alias vim="nvim"
+alias vi="nvim"
+alias ssh="kitty +kitten ssh"
+export TERM=xterm-256color
+
+BASH/PATHS
+create ~/.local/bin
+ PATH="$HOME/.local/bin:$HOME/bin:$PATH"
