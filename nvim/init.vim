@@ -6,10 +6,11 @@ call plug#begin()
 	Plug 'chrisbra/csv.vim'
 	Plug 'jghauser/kitty-runner.nvim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'shinchu/lightline-gruvbox.vim'
+	Plug 'acepukas/vim-zenburn'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 call plug#end()
 
-"set t_Co=256
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab 
 set autochdir
 set autoread
 set clipboard=unnamedplus
@@ -21,6 +22,9 @@ set visualbell
 let g:zenburn_high_Contrast=1
 let g:zenburn_old_Visual=1
 highlight Comment cterm=italic
+set bg=dark
+set termguicolors
+let g:gruvbox_italic=1
 colorscheme zenburn
 
 function SendKittyCommand()
@@ -54,12 +58,14 @@ if &filetype == 'python'
 	let @g = ':w:silent !kitty @ send-text --match num:1 "format(\"%\")\n":e!'
 	let @q = ':silent !kitty @ send-text --match num:1 "\0"\n'
 endif
+	
+let @h = ':silent !kitty @ send-text --match num:1 "@edit 0"\n'
 
 map <a-r> <ESC>@h  
 imap <a-r> <ESC>@hi  
 
-map <A-a> <ESC>@d
-imap <A-a> <ESC>@d
+noremap <A-a> <ESC>@d
+inoremap <A-a> <ESC>@d
 
 noremap <A-h> <ESC>mlyaw@f<ESC>`l
 inoremap <A-h> <ESC>mlyaw@f<ESC>`l
@@ -70,6 +76,10 @@ imap <A-f> <ESC>ml@g@p<ESC>`lli
 vmap <a-s> <C-q>y<ESC>@e<ESC>
 imap <a-s> <ESC>ml0y$@e<ESC>`lli
 nmap <a-s> <ESC>ml0y$@e<ESC>`l
+
+vmap <a-e> <C-q>y<ESC>@h<ESC>
+imap <a-e> <ESC>ml0y$@h<ESC>`lli
+nmap <a-e> <ESC>ml0y$@h<ESC>`l
 
 vmap <a-cr> <C-q>y<ESC>@e<ESC>
 imap <a-cr> <ESC>ml[[v][$y$@e<ESC>`lli
@@ -113,11 +123,11 @@ if &term =~ '^screen' && exists('$TMUX')
 endif
 
 let g:lightline = {
-			\ 'colorscheme': 'seoul256',
+			\ 'colorscheme': 'solarized',
 			\ }
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -127,6 +137,10 @@ let g:lightline = {
       \ },
       \ }
 
+let g:lightline = {}
+let g:lightline.colorscheme = 'zenburn'
+
+let s:is_dark=(&background == 'dark')
 
 set noshowmode
 set laststatus=2
@@ -140,7 +154,7 @@ set mouse=a
 
 filetype plugin on
 
-:lua require('kitty-runner')
+":lua require('kitty-runner')
 
 " julia
 let g:default_julia_version = '1.0'
@@ -152,4 +166,4 @@ let g:julia_spellcheck_docstrings = 1
 
 set nospell
 
-
+set clipboard+=unnamedplus
