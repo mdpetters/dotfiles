@@ -1,266 +1,83 @@
-
-" The default vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2016 Sep 02
-"
-" This is loaded if no vimrc file was found.
-" Except when Vim is run with "-u NONE" or "-C".
-" Individual settings can be reverted with ":set option&".
-" Other commands can be reverted as mentioned below.
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
-" Bail out if something that ran earlier, e.g. a system wide vimrc, does not
-" want Vim to use these default values.
-if exists('skip_defaults_vim')
-  finish
-endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-" Allow backspacing over everything in insert mode.
-set backspace=indent,eol,start
-
-set history=200		" keep 200 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set wildmenu		" display completion matches in a status line
-
-set ttimeout		" time out for key codes
-set ttimeoutlen=100	" wait up to 100ms after Esc for special key
-
-" Show @@@ in the last line if it is truncated.
-set display=truncate
-
-" Show a few lines of context around the cursor.  Note that this makes the
-" text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
-
-" Do incremental searching when it's possible to timeout.
-if has('reltime')
-  set incsearch
-endif
-
-" Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
-" confusing.
-set nrformats-=octal
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
-if has('win32')
-  set guioptions-=t
-endif
-
-" Don't use Ex mode, use Q for formatting.
-" Revert with ":unmap Q".
-map Q gq
-
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-" Revert with ":iunmap <C-U>".
-inoremap <C-U> <C-G>u<C-U>
-
-" In many terminal emulators the mouse works just fine.  By enabling it you
-" can position the cursor, Visually select and scroll with the mouse.
-if has('mouse')
-  set mouse=a
-endif
-
-" Switch syntax highlighting on when the terminal has colors or when using the
-" GUI (which always has colors).
-if &t_Co > 2 || has("gui_running")
-  " Revert with ":syntax off".
-  syntax on
-
-  " I like highlighting strings inside C comments.
-  " Revert with ":unlet c_comment_strings".
-  let c_comment_strings=1
-endif
-
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  " Revert with ":filetype off".
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that you can revert them with:
-  " ":augroup vimStartup | au! | augroup END"
-  augroup vimStartup
-    au!
-
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid or when inside an event handler
-    " (happens when dropping a file on gvim).
-    autocmd BufReadPost *
-      \ if line("'\"") >= 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-
-  augroup END
-
-endif " has("autocmd")
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-" Revert with: ":delcommand DiffOrig".
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
-endif
-
-if has('langmap') && exists('+langremap')
-  " Prevent that the langmap option applies to characters that result from a
-  " mapping.  If set (default), this may break plugins (but it's backward
-  " compatible).
-  set nolangremap
-endif
-
 call plug#begin()
 	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'itchyny/lightline.vim'
-	Plug 'preservim/vimux'
+	Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-fugitive'
+	Plug 'morhetz/gruvbox'
+	Plug 'shinchu/lightline-gruvbox.vim'
+	Plug 'acepukas/vim-zenburn'
 	Plug 'preservim/nerdtree'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+	Plug 'airblade/vim-gitgutter'
+        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }	
+	Plug 'junegunn/fzf.vim'
 call plug#end()
 
-set t_Co=256
-set tabstop=4
-set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab 
-"set background=dark
-"let g:zenburn_high_Contrast=1
-let g:zenburn_old_Visual=1
-"let g:zenburn_alternate_Visual=1
-set wildmode=longest,list
-highlight Comment cterm=italic
-colorscheme zenburn
-
-set visualbell
-let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
-let @e = ':w:call VimuxRunCommand(@0)ji' 
-
-let g:default_julia_version = "devel"
-let g:nerdtree_plugin_open_cmd = "xdg-open"
-let g:nerdtree_open_cmd = "xdg-open"
-let g:julia_indent_align_brackets = 0
-let g:julia_indent_align_funcargs = 0
-
-" wrapping comments
-map ,> :s/^/# /<CR>
-map ,< :s/^# /<CR>
-
-let @d = ':w:call VimuxRunCommand("@time include(\"" . bufname("%") . "\")")i' 
-let @e = ':w:call VimuxRunCommand(@0)ji' 
-let @f = ':VimuxRunCommand("?".@0)'
-let @g = ':w:call VimuxRunCommand("format(\"" . bufname("%") . "\")"):ei' 
-
-execute "set <A-s>=\es"
-execute "set <A-d>=\ed"
-execute "set <A-a>=\ea"
-execute "set <A-f>=\ef"
-execute "set <A-cr>=\e\<cr>"
-
-noremap <A-d> <ESC>ml0yaw@f<ESC>`l
-inoremap <A-d> <ESC>ml0yaw@f<ESC>`l
-
-map <S-Enter> <ESC>@d
-imap <S-Enter> <ESC>@d
-map <A-a> <ESC>@d
-imap <A-a> <ESC>@d
-map <A-f> <ESC>@g
-imap <A-f> <ESC>@g
-
-vmap <C-Enter> <C-q>y<ESC>@e<ESC>
-imap <C-Enter> <ESC>ml0y$@e<ESC>`lli
-nmap <C-Enter> <ESC>ml0y$@e<ESC>`l
-
-
-vmap <A-s> <C-q>y<ESC>@e<ESC>
-imap <A-s> <ESC>ml0y$@e<ESC>`lli
-nmap <A-s> <ESC>ml0y$@e<ESC>`l
-
-vmap <A-cr> <C-q>y<ESC>@e<ESC>
-imap <A-cr> <ESC>ml[[v][$y$@e<ESC>`lli
-nmap <A-cr> <ESC>ml[[v][$y$@e<ESC>`l
-
-nmap <S-Up> v<Up>
-nmap <S-Down> v<Down>
-nmap <S-Left> v<Left>
-nmap <S-Right> v<Right>
-nmap <S-Home> v<Home>
-nmap <S-End> v<End>
-nmap <S-PageUp> vgg0
-nmap <S-PageDown> vG$
-vmap <S-Up> <Up>
-vmap <S-Down> <Down>
-vmap <S-Left> <Left>
-vmap <S-Right> <Right>
-vmap <S-Home> <Home>
-vmap <S-End> <End>
-vmap <S-PageUp> gg0
-vmap <S-PageDown> G$
-imap <S-Up> <Esc>v<Up>
-imap <S-Down> <Esc>v<Down>
-imap <S-Left> <Esc>v<Left>
-imap <S-Right> <Esc>v<Right>
-imap <S-Home> <Esc>v<Home>
-imap <S-End> <Esc><End>
-imap <S-PageUp> <ESC>vgg0
-imap <S-PageDown> <ESC>vG$
-
-" Workaround for TMUX
-if &term =~ '^screen' && exists('$TMUX')
-	set mouse+=a
-	" tmux knows the extended mouse mode
-	set ttymouse=xterm2
-	v" tmux will send xterm-style keys when xterm-keys is on
-	execute "set <xUp>=\e[1;*A"
-	execute "set <xDown>=\e[1;*B"
-	execute "set <xRight>=\e[1;*C"
-	execute "set <xLeft>=\e[1;*D"
-	execute "set <xHome>=\e[1;*H"
-	execute "set <xEnd>=\e[1;*F"
-	execute "set <Insert>=\e[2;*~"
-	execute "set <Delete>=\e[3;*~"
-	execute "set <PageUp>=\e[5;*~"
-	execute "set <PageDown>=\e[6;*~"
-	execute "set <xF1>=\e[1;*P"
-	execute "set <xF2>=\e[1;*Q"
-	execute "set <xF3>=\e[1;*R"
-	execute "set <xF4>=\e[1;*S"
-	execute "set <F5>=\e[15;*~"
-	execute "set <F6>=\e[17;*~"
-	execute "set <F7>=\e[18;*~"
-	execute "set <F8>=\e[19;*~"
-	execute "set <F9>=\e[20;*~"
-	execute "set <F10>=\e[21;*~"
-	execute "set <F11>=\e[23;*~"
-	execute "set <F12>=\e[24;*~"
-endif
-
-set number
+set autochdir
+set autoread
 set clipboard=unnamedplus
+set laststatus=1
+set wildmode=longest,list
+set number
+set novisualbell
+set noshowmode
+set laststatus=2
+set mouse=a
+set nospell
+set clipboard+=unnamedplus
+set noerrorbells
+set whichwrap=<,>,h,l,[,]
+set bg=dark
+set t_Co=256
+set updatetime=100
+set noerrorbells
+set belloff=all
 
-let g:lightline = {
-			\ 'colorscheme': 'apprentice',
-			\ }
-
-let g:VimuxRunnerIndex=0
-
-let &t_SI = "\e[5 q"  " Cursor config
-let &t_EI = "\e[1 q"
+let g:NERDTreeChDirMode = 2
+let g:NERDTreeQuitOnOpen = 1
 
 runtime macros/matchit.vim
+:au FocusLost * silent! wa
+
+let g:zenburn_high_Contrast=1
+let g:zenburn_old_Visual=1
+let g:lightline = {}
+let g:lightline.colorscheme = 'gruvbox'
+let s:is_dark=(&background == 'dark')
 
 " julia
 let g:default_julia_version = '1.0'
+let g:julia_indent_align_brackets = 0
+let g:julia_indent_align_funcargs = 0
+let g:julia_indent_align_import = 0
+let g:julia_spellcheck_comments = 1
+let g:julia_spellcheck_docstrings = 1
 
-set foldmethod=syntax
+highlight Comment cterm=italic
+colorscheme gruvbox 
+
+nmap <C-c> mlVgc<CR>`l
+vmap <C-c> mlgc<CR>`l
+imap <C-c> <ESC>mlgc<CR>`li
+ 
+imap <silent> <Down> <C-o>gj
+imap <silent> <Up> <C-o>gk
+nmap <silent> <Down> gj
+nmap <silent> <Up> gk
+
+" Comment/Uncomment selection
+nmap <C-c> mlVgc<CR>`l
+vmap <C-c> mlgc<CR>`l
+imap <C-c> <ESC>mlgc<CR>`li
+
+nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <TAB> >>
+nnoremap <S-TAB> <<
+vnoremap <TAB> >gv
+vnoremap <S-TAB> <gv
+
+" Spell-check Markdown files and Git Commit Messages
+autocmd FileType markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
+
+filetype plugin on
