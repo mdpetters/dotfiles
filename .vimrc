@@ -1,16 +1,20 @@
 call plug#begin()
-	Plug 'JuliaEditorSupport/julia-vim'
-	Plug 'itchyny/lightline.vim'
-	Plug 'tpope/vim-commentary'
-	Plug 'tpope/vim-fugitive'
-	Plug 'morhetz/gruvbox'
-	Plug 'shinchu/lightline-gruvbox.vim'
-	Plug 'acepukas/vim-zenburn'
-	Plug 'preservim/nerdtree'
-	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-	Plug 'airblade/vim-gitgutter'
-        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }	
-	Plug 'junegunn/fzf.vim'
+Plug 'JuliaEditorSupport/julia-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'morhetz/gruvbox'
+Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'acepukas/vim-zenburn'
+Plug 'preservim/nerdtree'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }	
+Plug 'junegunn/fzf.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 call plug#end()
 
 set autochdir
@@ -59,7 +63,7 @@ colorscheme gruvbox
 nmap <C-c> mlVgc<CR>`l
 vmap <C-c> mlgc<CR>`l
 imap <C-c> <ESC>mlgc<CR>`li
- 
+
 imap <silent> <Down> <C-o>gj
 imap <silent> <Up> <C-o>gk
 nmap <silent> <Down> gj
@@ -71,10 +75,16 @@ vmap <C-c> mlgc<CR>`l
 imap <C-c> <ESC>mlgc<CR>`li
 
 nnoremap <C-b> :NERDTreeToggle<CR>
-nnoremap <TAB> >>
-nnoremap <S-TAB> <<
-vnoremap <TAB> >gv
-vnoremap <S-TAB> <gv
+" nnoremap <TAB> >>
+" nnoremap <S-TAB> <<
+" vnoremap <TAB> >gv
+" vnoremap <S-TAB> <gv
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+
 
 " Spell-check Markdown files and Git Commit Messages
 autocmd FileType markdown setlocal spell
