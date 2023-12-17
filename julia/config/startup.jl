@@ -1,3 +1,5 @@
 using JuliaFormatter
+using Debugger
 
-ENV["JULIA_EDITOR"] = "/usr/bin/nvim"
+ENV["JULIA_EDITOR"] = "gvim --remote-tab-silent"
+
