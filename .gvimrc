@@ -24,6 +24,7 @@ let @j = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "@run 
 let @q = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "\0"\n'
 let @r = ':let @" = expand("%:p:h")'
 let @t = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "cd(\"0\")\n"'
+let @s = ':silent !kitty -o allow_remote_control=yes --listen-on unix:/tmp/mykitty julia &'
 
 imap <C-r> <ESC>@r@ti
 nmap <C-r> <ESC>@r@t
