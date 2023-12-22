@@ -65,14 +65,14 @@ nmap <A-Enter> <ESC>ml0y$@e`lj
 imap <A-Enter> <ESC>ml0y$@e`llji
 
 " Send Block to REPL and move to next block
-nmap <S-Enter> <ESC>ml}{0v}$y$@e}
-imap <S-Enter> <ESC>ml}{0v}$y$@e}i
+nmap <S-Enter> <ESC>ml}{0v}h$y@e{}
+imap <S-Enter> <ESC>ml}{0v}h$y@e{}i
 
-" Send Function to REPL and move to next
+" Send Function to REPL and move to next end of function (normal) stay on line (insert)
 nmap <C-A-Enter> <ESC>}[[0v][$y$@e[[][j
 imap <C-A-Enter> <ESC>hml@u@e`lla
 
-" Exectute File in REPL, do not move cursor
+" Exectute File in REPL, do not move cursor and stay on line 
 nmap <C-S-Enter> <ESC>ml0y$@d`l
 imap <C-S-Enter> <ESC>hml0y$@d`lla
 
