@@ -25,6 +25,7 @@ let @q = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "\0"\
 let @r = ':let @" = expand("%:p:h")'
 let @t = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "cd(\"0\")\n"'
 let @s = ':silent !kitty -o allow_remote_control=yes --listen-on unix:/tmp/mykitty julia &'
+let @u = '[[0v][$y'
 
 imap <C-r> <ESC>@r@ti
 nmap <C-r> <ESC>@r@t
@@ -54,32 +55,34 @@ vmap <C-/> mlgc<CR>`l
 imap <C-/> <ESC>mlgc<CR>`li
 
 " Send Line to REPL, do not move cursor
-vmap <C-Enter> <C-q>y<ESC>@e<ESC>j
-imap <C-Enter> <ESC>ml0y$@e<ESC>`la
-nmap <C-Enter> <ESC>ml0y$@e<ESC>`l
+vmap <C-Enter> <C-q>y<ESC>@ej
+nmap <C-Enter> <ESC>ml0y$@e`l
+imap <C-Enter> <ESC>ml0y$@e`la
 
 " Send Line to REPL, move cursor to next line
-vmap <A-Enter> <C-q>y<ESC>@e<ESC>j
-imap <A-Enter> <ESC>ml0y$@e<ESC>`llji
-nmap <A-Enter> <ESC>ml0y$@e<ESC>`lj
+vmap <A-Enter> <C-q>y<ESC>@ej
+nmap <A-Enter> <ESC>ml0y$@e`lj
+imap <A-Enter> <ESC>ml0y$@e`llji
 
-" Send Block to REPL and move to next
-imap <S-Enter> <ESC>ml}{0v}$y$@e<ESC>}i
-nmap <S-Enter> <ESC>ml}{0v}$y$@e<ESC>}
+" Send Block to REPL and move to next block
+nmap <S-Enter> <ESC>ml}{0v}$y$@e}
+imap <S-Enter> <ESC>ml}{0v}$y$@e}i
+
+" Send Function to REPL and move to next
+nmap <C-A-Enter> <ESC>}[[0v][$y$@e[[][j
+imap <C-A-Enter> <ESC>hml@u@e`lla
 
 " Exectute File in REPL, do not move cursor
-" nmap <C-m> <ESC> 
-" nmap <C-m> :w<CR>:silent !rsync -avr /home/petters/remote/caesar/ caesar:/home/aerosol/opt/caesarDAQ/<CR>
-imap <C-S-Enter> <ESC>hml0y$@d<ESC>`lla
-nmap <C-S-Enter> <ESC>ml0y$@d<ESC>`l
+nmap <C-S-Enter> <ESC>ml0y$@d`l
+imap <C-S-Enter> <ESC>hml0y$@d`lla
 
 " Julia Formatter - format file
-nmap <C-S-f> <ESC>ml@g@p<ESC>`l
-imap <C-S-f> <ESC>ml@g@p<ESC>`lli
+nmap <C-S-f> <ESC>ml@g`l
+imap <C-S-f> <ESC>hml@g`lla
 
 " VIM Formatter - format file
-nmap <C-S-i> <ESC>mlggVG=<ESC>`l
-imap <C-S-i> <ESC>mlggVG=<ESC>`lli
+nmap <C-S-i> <ESC>mlggVG=`l
+imap <C-S-i> <ESC>hmlggVG=`lla
 
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
