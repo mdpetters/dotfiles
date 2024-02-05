@@ -1,54 +1,34 @@
 " set guifont=JuliaMono\ 18
-set guifont=Cascadia\ Code\ 14
+set guifont=Cascadia\ Code\ 16
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 set guiligatures=!\"#$%&()*+-./:<=>?@[]^_{\|~  
 set hidden
-set backspace=indent,eol,start
-set termguicolors
-let g:terminal_ansi_colors = [
-			\ '#1e2021',
-			\ '#cc241d',
-			\ '#98971a',
-			\ '#d79921',
-			\ '#458588',
-			\ '#b16286',
-			\ '#689d6a',
-			\ '#a89984',
-			\ '#928374',
-			\ '#fb4934',
-			\ '#b8bb26',
-			\ '#fadb2d',
-			\ '#83a598',
-			\ '#d3869b',
-			\ '#8ec07c',
-			\ '#928374',
-			\ ]
-hi Terminal guibg=#1d2021 guifg=#ebdbb2
 
-function SendRegister()
+function SendKittyCommand1()
 	let command = @"
-	let s:sendcommand = shellescape(command, 1)
-	let prefixed_command = "!tmux send-keys -l " . s:sendcommand
+	let s:sendcommand = join([shellescape(command, 1), shellescape('\n')])
+
+	let prefixed_command = "!kitty @ send-text --to unix:/tmp/mykitty --match num:0 " . s:sendcommand
 	silent exec prefixed_command
-	silent exec "!tmux send-keys Enter"
-	" echon ''
+	echon ''
 endfunction
 
 " Kitty Bindings for REPL interaction
-call setreg('e', ":call SendRegister()")
+call setreg('e', ":call SendKittyCommand1()")
 
-" let @e = ':silent !tmux send-keys "0" Enter'
-let @d = ':w:silent !tmux send-keys "@time include(\"%\")" Enter'
-let @f = ':silent !tmux send-keys "? 0" Enter'
-let @g = ':w:silent !tmux send-keys "format(\"%\")" Enter:e!'
-let @h = ':silent !tmux send-keys "@edit 0" Enter'
-let @i = ':silent !tmux send-keys "@enter 0" Enter'
-let @j = ':silent !tmux send-keys "@run 0" Enter'
+let @d = ':w:silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "@time include(\"%\")\n"'
+let @f = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "? 0\n"'
+let @g = ':w:silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "format(\"%\")\n":e!'
+let @h = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "@edit 0\n"'
+let @i = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "@enter 0\n"'
+let @j = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "@run 0\n"'
+let @q = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "\0"\n'
 let @r = ':let @" = expand("%:p:h")'
-let @t = ':silent !tmux send-keys "cd(\"0\")" Enter'
+let @t = ':silent !kitty @ send-text --to unix:/tmp/mykitty --match num:0 "cd(\"0\")\n"'
+let @s = ':silent !kitty -o allow_remote_control=yes --listen-on unix:/tmp/mykitty julia &'
 let @u = '[[0v][$'
 
 imap <C-r> <ESC>@r@ti
